@@ -1,0 +1,15 @@
+{
+ "compilerOptions": {
+    "composite": true, // Должно быть true
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo", // Путь к файлу
+    "target": "ESNext", // Или "ES2020", "ES2022" - не "ES2023" если это вызывает проблему
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "noEmit": false, // Должно быть false для композитных проектов
+    "types": ["node"] // Должно быть здесь
+  },
+  "include": ["vite.config.ts", "eslint.config.js"] // Включаем только файлы, которые компилируются Node.js
+}
