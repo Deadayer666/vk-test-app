@@ -11,27 +11,33 @@
 •	Адаптивный дизайн с использованием компонентов Material-UI.
 
 Требования
+
 •	Node.js (версия 16 или выше)
 •	npm или Yarn
 •	Валидный API-ключ Кинопоиска (можно использовать предоставленный ключ или получить свой на Kinopoisk API)
 
 Установка
+
 1.	Клонирование репозитория:
 2.	git clone https://github.com/твой-username/movie-app.git
 cd movie-app
 
-4.	Установка зависимостей: С помощью npm:
+4.	Установка зависимостей:
+   
+С помощью npm:
 npm install
 Или с помощью Yarn:
 yarn install
 
 6.	Настройка переменных окружения:
+
 o	Скопируйте .env.default в .env:
 cp .env.default .env
 o	Откройте .env и убедитесь, что VITE_KINOPOISK_API_KEY валиден.
 Предоставленный ключ должен работать, но вы можете заменить его на свой.
 
 8.	Запуск приложения: Запустите сервер разработки:
+
 npm run dev
 Или с Yarn:
 yarn dev
@@ -42,11 +48,13 @@ npm run build
 Собранные файлы будут в папке dist.
 
 Скрипты
+
 •	npm run dev или yarn dev: Запуск сервера разработки.
 •	npm run build или yarn build: Сборка приложения для продакшена.
 •	npm run preview или yarn preview: Предпросмотр продакшен-сборки локально.
 
 Используемые технологии
+
 •	React: Фреймворк для интерфейса.
 •	TypeScript: JavaScript с типизацией.
 •	Vite: Инструмент сборки и сервер разработки.
@@ -57,6 +65,7 @@ npm run build
 •	react-intersection-observer: Реализация бесконечной прокрутки.
 
 Структура проекта
+
 •	src/api/: Запросы к API Кинопоиска.
 •	src/components/: Компоненты React (MovieCard, Filters, ConfirmationModal).
 •	src/hooks/: Пользовательские хуки (useFilterSync).
@@ -68,10 +77,12 @@ npm run build
 •	src/MovieList.tsx, src/MovieDetail.tsx, src/Favorites.tsx, src/NotFound.tsx: Компоненты страниц.
 
 Переменные окружения
+
 •	VITE_KINOPOISK_API_KEY: Ваш API-ключ Кинопоиска.
 •	VITE_KINOPOISK_BASE_URL: Базовый URL API Кинопоиска (по умолчанию: https://api.kinopoisk.dev/v1.4).
 
 Решение проблем
+
 •	Ошибки API: Убедитесь, что API-ключ валиден и не превышен лимит запросов. Протестируйте ключ через Postman.
 •	Ошибки TypeScript: Запустите npm run tsc для проверки типов или перезапустите сервер TypeScript в IDE.
 •	Проблемы со сборкой: Очистите кэш npm/Yarn и переустановите зависимости:
@@ -80,6 +91,5 @@ npm run build
 npm install
 
 Контрибьютинг
+
 Приветствуются любые предложения и пул-реквесты для улучшения приложения!
-
-
